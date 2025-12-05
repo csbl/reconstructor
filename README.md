@@ -126,6 +126,14 @@ All arguments for this function are described in the
 --test <run installation tests, default = no, str>
 ```
 
+## Citing
+
+If you use `Reconstructor` in your work, please cite the following publication:
+
+```text
+Jenior ML, Glass EM, Papin JA. Reconstructor: a COBRApy compatible tool for automated genome-scale metabolic network reconstruction with parsimonious flux-based gap-filling. Bioinformatics. 2023;39: btad367. doi:10.1093/bioinformatics/btad367
+```
+
 ## Additional Information
 
 Thank you for your interest in `Reconstructor`. If you have any additional
