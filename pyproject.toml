@@ -1,0 +1,32 @@
+[project]
+name = "reconstructor"
+version = "1.2.0"
+description = "COBRApy-compatible tool for reconstruction of genome-scale metabolic network models"
+author = "CSBL Papin Lab"
+license = "MIT"
+readme = "README.md"
+include = [
+    "reconstructor/resources/*.gz",
+    "reconstructor/resources/testfiles.zip"
+]
+exclude = [
+    "reconstructor/resources/screened_kegg_prokaryotes_pep_db.dmnd",
+    "reconstructor/bin/*"
+]
+requires-python = ">=3.9"
+dependencies = [
+    "cobra>=0.30",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[dependency-groups]
+dev = [
+    "pytest (>=7.0)",
+    "black (>=25.11.0,<26.0.0)",
+    "ruff (>=0.14.7,<0.15.0)"
+]
